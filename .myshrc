@@ -1,0 +1,19 @@
+// Aliases (with or without the alias keyword, one word aliases only)
+reveall = reveal -l
+alias reveala = reveal -a
+alias home = hop ~
+
+// Functions (BONUS)
+mk_hop()
+{
+    mkdir "$1" # Create the directory
+    hop "$1" # Change into the directory
+}
+
+hop_seek()
+{
+    hop "$1" # Hop into this directory
+    seek "$1" # Search for files/directories with the same name as the directory you just hopped into
+}
+
+// Also valid : func mk_hop()
